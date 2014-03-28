@@ -3,6 +3,18 @@
 	<head>
 		<link rel = "stylesheet" type="text/css" href "style.css"/>
 		<script type = "text/javascript" src = "script.js"></script>
+		<script type = "text/javascript">
+			function convert()
+			{
+				var input = document.getElementById("toBeConverted").value;
+				var centi2In = input*3;
+				var in2Cent = input/3;
+				var centg2Fahr = input*9;
+				var fahr2Cent = input/9;
+				
+				document.getElementById("Centi2In").innerHTML = input +" converted to inches = " + centi2In;
+			}
+		</script>
 	</head>
 	<body>
 		<div id = "main">
@@ -11,7 +23,7 @@
 			</div>
 			<div id = "converter">
 			<input name = "toBeConverted" id = "toBeConverted" placeholder = "Amount to be converted"/>
-			<div id = "Centm2In" class = "outputBox">
+			<div id = "Centi2In" class = "outputBox">
 
 			</div>
 			<div id = "In2Centm" class = "outputBox">
@@ -26,7 +38,7 @@
 			<div id = "In2Cent" class = "outputBox">
 			
 			</div>			
-			<button name = "button" type ="button" id="convertButton" onclick = "somefunction(x)" >Press to Convert</button>
+			<button name = "button" type ="button" id="convertButton" onClick = "convert()" >Press to Convert</button>
 			</div>
 		</div>
 	</body>
