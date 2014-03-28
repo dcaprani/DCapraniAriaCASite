@@ -9,31 +9,40 @@
 	</head>
 	<body>
 		<div id = "main">
+		<!--div for heading / welcome-->
 			<div id = "header">
 			<h1>Welcome To The Conveter App</h1>
 			</div>
+			<!-- Main div containing Content-->
 			<div id = "converter">
+			<!--input box for number to be convetted  -->
 			<input name = "toBeConverted" id = "toBeConverted" placeholder = "Amount to be converted"/>
+			<!-- output div for cm to ins conversion -->
 			<div class = "outputBox">
 				<div id = "Centi2In" class = "output">
+					X cm = Y ins
 				</div>
 			</div>
+			
+			<!-- output div for ins to cm conversion  -->
 			<div class = "outputBox">
 				<div id = "In2Centm" class = "output">
+					X ins = Y cm
 				</div>
 			</div>
+			<!-- output div for centigrade to fahrenheit conversion -->
 			<div class = "outputBox">
 				<div id = "Centg2Fahr" class = "output">
+					X deg C = Y deg Fahr
 				</div>
 			</div>
+			<!-- output div for fahrenheit to centigrade conversion -->
 			<div class = "outputBox">
 				<div id = "Fahr2Centg" class = "output">
+					X deg F = Y deg C
 				</div>
-			</div>
-			<div class = "outputBox">
-				<div id = "In2Cent" class = "output">
-				</div>
-			</div>			
+			<!-- button to call conversion function -->
+			</div>		
 			<button name = "button" type ="button" id="convertButton" onClick = "convert()" >Press to Convert</button>
 			</div>
 		</div>
