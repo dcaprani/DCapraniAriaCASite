@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel = "stylesheet" type="text/css" href "style.css"/>
+		<link rel = "stylesheet" type="text/css" href ="style.css"/>
 		<script type = "text/javascript" src = "script.js"></script>
 		<script type = "text/javascript">
-			function convert()
-			{
-				var input = document.getElementById("toBeConverted").value;
-				var centi2In = input*3;
-				var in2Cent = input/3;
-				var centg2Fahr = input*9;
-				var fahr2Cent = input/9;
-				
-				document.getElementById("Centi2In").innerHTML = input +" cms = " + centi2In + " ins";
-				document.getElementById("In2Centm").innerHTML = input +" ins = " + in2Cent + " cms";
-				document.getElementById("Centg2Fahr").innerHTML = input +" deg C = " + centg2Fahr + "deg F";
-				document.getElementById("Fahr2Centg").innerHTML = input +" deg F = " + fahr2Cent + " deg C";
-			}
+
 		</script>
 	</head>
 	<body>
@@ -26,20 +14,25 @@
 			</div>
 			<div id = "converter">
 			<input name = "toBeConverted" id = "toBeConverted" placeholder = "Amount to be converted"/>
-			<div id = "Centi2In" class = "outputBox">
-
+			<div class = "outputBox">
+				<div id = "Centi2In" class = "output">
+				</div>
 			</div>
-			<div id = "In2Centm" class = "outputBox">
-			
+			<div class = "outputBox">
+				<div id = "In2Centm" class = "output">
+				</div>
 			</div>
-			<div id = "Centg2Fahr" class = "outputBox">
-			
+			<div class = "outputBox">
+				<div id = "Centg2Fahr" class = "output">
+				</div>
 			</div>
-			<div id = "Fahr2Centg" class = "outputBox">
-			
+			<div class = "outputBox">
+				<div id = "Fahr2Centg" class = "output">
+				</div>
 			</div>
-			<div id = "In2Cent" class = "outputBox">
-			
+			<div class = "outputBox">
+				<div id = "In2Cent" class = "output">
+				</div>
 			</div>			
 			<button name = "button" type ="button" id="convertButton" onClick = "convert()" >Press to Convert</button>
 			</div>
